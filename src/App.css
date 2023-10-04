@@ -1,0 +1,8 @@
+#root {
+  @apply flex;
+  @apply h-screen;
+  @apply flex-col;
+  @apply justify-center;
+  @apply items-center;
+  @apply space-y-20;
+}
