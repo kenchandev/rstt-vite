@@ -8,25 +8,34 @@ This template is perfect for demoing small React applications.
 
 _Note_: Before proceeding, verify that you have `pnpm` installed on your machine.
 
-1. Clone this repository.
-2. Within the root of this project directory, run `pnpm install`.
-3. Spin up the Vite dev server by running `pnpm run dev`.
+```shell
+# Scaffold your project with this template.
+$ npx degit kenchandev/rstt-vite <project-name>
+# Change the current working directory.
+$ cd <project-name>
+# Install dependencies.
+$ pnpm install
+# Initialize a new Git repository and enable Git hooks.
+$ pnpm run prepare
+# Spin up the Vite dev server.
+$ pnpm run dev
+```
 
 ## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+If you are developing a production application, then you should update the configuration to enable type aware lint rules:
 
 - Configure the top-level `parserOptions` property like this:
 
 ```js
    parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
     tsconfigRootDir: __dirname,
    },
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
+- Add `plugin:@typescript-eslint/stylistic-type-checked` (optional).
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
