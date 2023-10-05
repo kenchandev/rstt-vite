@@ -10,6 +10,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier . --write",
+    "prepare": "git init && husky install",
     "lint-staged": "lint-staged",
     "commitlint": "commitlint",
     "git-hook:cz": "git cz --hook"
