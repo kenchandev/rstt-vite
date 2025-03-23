@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import viteLogo from "/vite.svg";
 import reactLogo from "@/assets/react.svg";
+import Button from "@/components/Button";
 import "@/App.css";
 
 export const App: FC = () => {
@@ -44,6 +45,7 @@ export const App: FC = () => {
           Edit <code>src/App.tsx</code> and save to test HMR.
         </p>
       </div>
+      <Button label="Text Button" />
       <p className="text-gray-400">
         Click on the Vite and React logos to learn more.
       </p>
